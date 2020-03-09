@@ -10,6 +10,21 @@ namespace LinQ_Problems
     {
         static void Main(string[] args)
         {
+            List<string> words = new List<string> { "the", "bike", "this", "it", "tenth", "mathematics" };
+            List<string> wordsWithTH = words.Where(s => s.Contains("th")).ToList();
+            foreach(var s in wordsWithTH)
+            {
+
+                Console.WriteLine(s.ToString());
+                    
+                
+            }
+
+            Console.ReadLine();
+
+
+
+
         }
     }
 }
